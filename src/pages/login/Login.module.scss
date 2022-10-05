@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 15%;
+    width: 100%;
+}
+
+.img-1, .img-2, .img-3 {
+    position: absolute;
+}
+.img-1 {
+    top: 4vh;
+    left: 8vh;
+}
+.img-2 {
+    bottom: 6vh;
+}
+.img-3 {
+    top: 3vh;
+    right: 4vh;
+}    

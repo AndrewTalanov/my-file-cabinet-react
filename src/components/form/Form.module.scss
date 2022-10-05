@@ -1,0 +1,77 @@
+.form {
+    --input-padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30vw;
+    box-sizing: border-box;
+    padding: 20px 30px;
+
+    fieldset, button {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    fieldset {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        height: calc(var(--input-padding) + 50px);
+        border-radius: 5px;
+        border: 1px solid #CACACA;
+        box-shadow: 2px 4px 6px rgba(79, 79, 79, 0.15);
+    }
+
+    legend {
+        padding: 0 10px;
+        color: #878787;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    input {
+        background-color: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: var(--input-padding);
+        border: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 30px;
+        background: #0D99FF;
+        border-radius: 15px;
+        border: 0;
+        color: white;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #878787;
+        text-decoration: none;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+}
