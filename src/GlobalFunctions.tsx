@@ -1,4 +1,4 @@
-export function setStyles(...array: string[]) {
+export function setStyles(...array: string[]): string {
 
     let styles: string = '';
 

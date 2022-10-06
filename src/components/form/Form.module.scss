@@ -19,40 +19,6 @@
         font-size: 40px;
     }
 
-    fieldset {
-        position: relative;
-        width: 100%;
-        box-sizing: border-box;
-        height: calc(var(--input-padding) + 50px);
-        border-radius: 5px;
-        border: 1px solid #CACACA;
-        box-shadow: 2px 4px 6px rgba(79, 79, 79, 0.15);
-    }
-
-    legend {
-        padding: 0 10px;
-        color: #878787;
-        font-weight: 700;
-        font-size: 16px;
-    }
-
-    input {
-        background-color: inherit;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: var(--input-padding);
-        border: none;
-        box-sizing: border-box;
-        font-size: 16px;
-        
-
-        &:focus {
-            outline: none;
-        }
-    }
-
     button {
         font-style: normal;
         font-weight: 700;
@@ -63,6 +29,14 @@
         border-radius: 15px;
         border: 0;
         color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0px 0px 15px #0D99FF;
+        }
+        &:active {
+            transform: scale(.9);
+        }
     }
 
     a {

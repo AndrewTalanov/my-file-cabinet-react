@@ -1,0 +1,40 @@
+.fieldset {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: calc(var(--input-padding) + 50px);
+    border-radius: 5px;
+    border: 1px solid #CACACA;
+    box-shadow: 2px 4px 6px rgba(79, 79, 79, 0.15);
+    transition: .3s;
+
+    &:hover legend {
+        color: black;
+    }
+
+    legend {
+        transition: .3s;
+        padding: 0 10px;
+        color: #878787;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    input {
+        background-color: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: var(--input-padding);
+        border: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        &:focus {
+            outline: none;
+        }
+        &:focus + legend{
+            color: black;
+        }
+    }
+}

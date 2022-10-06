@@ -18,7 +18,7 @@ const Form: FC = () => {
 
             <Input title="ФИО" type="text" name="fio" style={login ? {display: "none"} : {display: "block"}}/>
             
-            <button type="submit" name="submit">{login ? "Войти" : "Регистрация"}</button>
+            <button type="submit" name={login ? "login" : "register"}>{login ? "Войти" : "Регистрация"}</button>
 
             <a onClick={() => setLogin(!login)}>{login ? "Войти" : "Зарегистрироваться"}</a>
 
