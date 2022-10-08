@@ -1,0 +1,48 @@
+.header {
+    width: 8%;
+    background-color: #03A9F4;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        li {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s;
+            }
+
+            &:hover::after {
+                cursor: pointer;
+                filter: drop-shadow(0px 0px 10px white);
+            }
+
+            &:active::after {
+                transition: .1s;
+                transform: translate(-50%, -50%) scale(.9);
+            }
+        }
+
+        .home::after {
+            content: url(../../assets/img/home.svg);
+        }
+        .exit::after {
+            content: url(../../assets/img/back.svg);
+        }
+        .profile::after {
+            content: url(../../assets/img/profile.svg);
+        }
+    }
+}

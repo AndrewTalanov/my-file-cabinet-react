@@ -1,4 +1,5 @@
 import { FC, useState } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { setStyles } from "../../GlobalFunctions";
 import Input from "../input/Input";
 import styles from "./Form.module.scss";
@@ -20,7 +21,9 @@ const Form: FC = () => {
             
             <button type="submit" name={login ? "login" : "register"}>{login ? "Войти" : "Регистрация"}</button>
 
-            <a onClick={() => setLogin(!login)}>{login ? "Войти" : "Зарегистрироваться"}</a>
+            <Link to="/app">test</Link>
+
+            <a onClick={() => setLogin(!login)}>{login ? "Зарегистрироваться" : "Войти"}</a>
 
         </form>
     );
